@@ -108,7 +108,7 @@ import Zéphire9 from './asset/Typographie/Zéphire9.gif';
 import Lgc from './asset/lgconver.jpg';
 import Content from './asset/contentmesh.jpg';
 import Czsu from './asset/czsu.jpg'
-import Memoire from './asset/mémoire.png'
+import Memoire from './asset/memoire.png'
 
 const projets = [
   {
