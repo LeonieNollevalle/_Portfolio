@@ -1,38 +1,106 @@
-.App {
+@font-face {
+  font-family: 'avara';
+  src: url(./font/Avara-Bold.ttf),
+  url(./font/Avara-Bold.woff),
+  url(./font/Avara-Bold.woff2);
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('./font/Helvetica.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Oblique'), url('./font/Helvetica-Oblique.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica Compressed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Compressed'), url('./font/helvetica-compressed-5871d14b6903a.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica Rounded Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Rounded Bold'), url('./font/helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica'), url('./font/Helvetica-Bold.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica Bold Oblique';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Bold Oblique'), url('./font/Helvetica-BoldOblique.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Helvetica Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Helvetica Light'), url('./font/helvetica-light-587ebe5a59211.woff') format('woff');
+  }
+
+h2 {
+  font-family: 'avara';
+  font-size: 60px;
+  line-height: 1;
   text-align: center;
+  width: 40%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  font-family: 'Helvetica';
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  line-height: 1.1;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.expo {
+  font-family: serif;
+  font-size: 20px;
+  font-style: italic;
+  vertical-align: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+h4 {
+  font-family: 'Helvetica';
+  font-weight: 500;
+  font-size: 180px;
+  color: #EBEBEB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bg-port {
+  z-index: -1;
+}
+
+.bord {
+  border: 1px solid black;
+}
+
+.info{
+  line-height: 1.1;
+
 }
