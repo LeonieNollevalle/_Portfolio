@@ -10,12 +10,15 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.29.0",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "5.0.1",
+    "sitemap": "^7.1.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "generate-sitemap": "node sitemap-generator.js",
+    "build": "npm run generate-sitemap && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
