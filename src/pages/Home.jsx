@@ -58,9 +58,9 @@ for (const projet of projets) {
         {projets.map((projet) => {
         return (
           <Link to={`/work/${projet.id}`}><div className="w-full flex items-center justify-start text-2xl hover:font-bold cursor-pointer ">
-          <a className="font-medium hover:font-bold cursor-pointer" href="https://example.com"> {projet.categorie && projet.categorie === "projet"  ? projet.titre : false}</a>
-          <a href="https://example.com" className="font-light italic">{projet.categorie && projet.categorie === "projet"  ? "—"+ projet.date : false}</a>
-          <a href="https://example.com" className="ml-2 w-auto  font-light italic ">{projet.categorie && projet.categorie === "projet"  ? projet.hashtag : false}</a>
+          <a className="font-medium hover:font-bold cursor-pointer" href="/work/:id"> {projet.categorie && projet.categorie === "projet"  ? projet.titre : false}</a>
+          <a href="/work/:id" className="font-light italic">{projet.categorie && projet.categorie === "projet"  ? "—"+ projet.date : false}</a>
+          <a href="/work/:id" className="ml-2 w-auto  font-light italic ">{projet.categorie && projet.categorie === "projet"  ? projet.hashtag : false}</a>
           </div>  
           </Link>    
           );
@@ -76,28 +76,16 @@ for (const projet of projets) {
       {projets.map((projet) => {
         return (
           <Link to={`/work/${projet.id}`}> <div className="w-auto flex justify-start text-2xl hover:font-bold cursor-pointer ">
-          <a className="font-medium hover:font-bold cursor-pointer" href="https://example.com"> {projet.categorie && projet.categorie !== "projet"  ? projet.titre : ""}</a>
-          <a href="https://example.com" className="font-light italic">{projet.categorie && projet.categorie !== "projet"  ? "—"+projet.date : ""}</a>
-          <a href="https://example.com" className="ml-2 font-light italic">{projet.categorie && projet.categorie !== "projet"  ? " "+projet.hashtag : ""}</a>
+          <a className="font-medium hover:font-bold cursor-pointer" href="/work/:id"> {projet.categorie && projet.categorie !== "projet"  ? projet.titre : ""}</a>
+          <a href="/work/:id" className="font-light italic">{projet.categorie && projet.categorie !== "projet"  ? "—"+projet.date : ""}</a>
+          <a href="/work/:id" className="ml-2 font-light italic">{projet.categorie && projet.categorie !== "projet"  ? " "+projet.hashtag : ""}</a>
           </div> </Link>
       );
       })}
       </div>
       </div>
       </div>
-      <div className="text-white flex w-full">
-      <h1>Designer graphique</h1>
-      <h1>Graphiste</h1>
-      <h1>Designer d'interfaces</h1>
-      <h1>Web designer</h1>
-      <h1>UX Designer</h1>
-      <h1>UI Designer</h1>
-      <h1>Développement Web</h1>
-      <h1>Nice</h1>
-      <h1>Côte d'Azur</h1>
-      <h1>Interface Hommes Machine</h1>
-      <h1>IHM</h1>
-      </div>
+      
     </div>
   );
 }
