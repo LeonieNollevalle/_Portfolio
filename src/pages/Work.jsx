@@ -8,43 +8,42 @@ const Work = () => {
   const { id } = useParams();
 
   return (
-    <div className="w-screen h-screen overflow-hidden flex ">
-      <div className="w-1/2 h-screen">
+    <div className="w-screen h-screen flex-col  xl:flex-row xl:overflow-hidden flex md:flex-col">
+      <div className="w-full h-auto pt-10 xl:h-screen lg:h-screen md:h-screen xl:w-1/2 lg:w-1/2 md:w-full md:h-auto md:pt-20 md:pb-32">
       <div className="w-full h-1/4 flex flex-col justify-center items-center pr-2">
-      <h2 className="w-1/2">{projets[id].titre}<sup className="expo">({projets[id].date})</sup></h2>    
+      <h2 className="w-2/3 lg:w-1/2 md:w-1/2 sm:w-1/2 ">{projets[id].titre}<sup className="expo">({projets[id].date})</sup></h2>    
       </div>
       <div className="w-full flex gap-5 justify-center">
-      <div className=" w-2/3 h-1/2">
+      <div className="w-5/6 h-auto lg:w-2/3 lg:h-1/2 md:w-2/3 md:h-1/2 sm:w-2/3 sm:h-1/2">
       <p className={projets[id].contexte ? "text-sm font-medium pb-5" : "hidden"}>CONTEXTE</p>
-      <p className="text-justify">{projets[id].contexte ? projets[id].contexte : projets[id].descritpion}</p>
+      <p className={projets[id].contexte ? "text-start lg:text-justify md:text-justify sm:text-justify": "pt-10 text-center lg:text-justify md:text-justify sm:text-justify md:pt-20"}>{projets[id].contexte ? projets[id].contexte : projets[id].descritpion}</p>
       <p className={projets[id].contexte ? "text-sm font-medium pb-5 pt-5" : "hidden"}>PROPOSITION</p>
-      <p className="text-justify">{projets[id].proposition ? projets[id].proposition : ''}</p>
+      <p className={projets[id].contexte ?"text-start lg:text-justify md:text-justify sm:text-justify ": "hidden"}>{projets[id].proposition ? projets[id].proposition : ''}</p>
       </div>
       </div>
       <div className="w-full pt-10  flex items-start justify-between">
-
       {projets[id].liensProto ? 
-      <div className="w-1/2 h-auto text-center">
-      <a className=" w-auto h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensProto}>Accéder site ↗︎</a>
+      <div className="w-1/2 h-auto text-center ">
+      <a className="w-auto h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensProto}>Accéder site ↗︎</a>
       </div>
        : ""}
         {projets[id].liensProto2 ? 
         <div className="w-1/2 h-auto text-center">
-            <a className=" w-auto h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensProto2}>Accéder site ↗︎</a>
+            <a className=" xl:w-auto h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensProto2}>Accéder site ↗︎</a>
           </div>
        : ""}
        {projets[id].liensSite ? 
-       <div className="w-2/6 h-auto flex justify-end">
-            <a className=" w-1/2 text-sm h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensSite}>Accéder site ↗︎ </a>
+       <div className="w-1/2 h-auto text-center">
+            <a className=" w-2/6 xl:w-1/2  text-sm h-auto bord px-3 py-2 rounded-sm hover:cursor-pointer" href={projets[id].liensSite}>Accéder site ↗︎ </a>
         </div>
        : ""}
        {projets[id].liensProto || projets[id].liensProto2 || projets[id].liensSite ? 
-       <div className="w-2/6 h-auto flex justify-start">
-       <p className="italic w-1/2">{projets[id].hashtag}</p>
+       <div className="w-2/6 h-auto flex justify-start mb-48">
+       <p className="italic w-1/2 ">{projets[id].hashtag}</p>
        </div>
        : 
-       <div className="w-full h-auto flex justify-center">
-       <p className="italic text-center">{projets[id].hashtag}</p>
+       <div className="w-full h-auto flex justify-center pb-20">
+       <p className="italic text-center ">{projets[id].hashtag}</p>
        </div>
        }
        
@@ -52,7 +51,7 @@ const Work = () => {
 
        
       </div>
-      <div className="w-1/2 bg-black overflow-y-scroll">
+      <div className="w-full lg:w-1/2 bg-black xl:overflow-y-scroll md:w-full">
       {projets[id].images.map((image) => {
         return (
           <div>
