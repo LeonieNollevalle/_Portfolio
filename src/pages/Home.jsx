@@ -47,7 +47,7 @@ for (const projet of projets) {
         <a href="https://leonienollevalle-cv.netlify.app/" className="info xl:w-1/3 lg:w-2/3 md:w-2/3 hover:underline cursor-pointer">cv ↗</a>
         </div>
         <div className="pt-5 flex items-center justify-center lg:justify-start lg:w-1/2 lg:pt-0 md:justify-start md:pt-0 md:w-1/2 sm:w-1/2 text-lg">
-        <p className="w-5/6  lg:w-2/3 md:w-3/4 sm:3/4">Hybrides de par mon parcours, je me sers de chacune de mes compétences acquises dans le domaine du design graphique, du développement web et de l’UX design, afin de développer une expérience centrée utilisateurs sur des interfaces numériques et prints. </p>
+        <p className="w-5/6  lg:w-2/3 md:w-3/4 sm:3/4">Hybride de par mon parcours, je me sers de chacune de mes compétences acquises dans le domaine du design graphique, du développement web et de l’UX design, afin de développer une expérience centrée utilisateurs sur des interfaces numériques et prints. </p>
         </div>
       
       </div>
