@@ -106,13 +106,115 @@ import Zéphire7 from './asset/Typographie/Zéphire7.jpg';
 import Zéphire8 from './asset/Typographie/Zéphire8.jpg';
 import Zéphire9 from './asset/Typographie/Zéphire9.gif';
 import Lgc from './asset/lgconver.jpg';
-import Content from './asset/contentmesh.jpg';
-import Czsu from './asset/czsu.jpg'
+import Content from './asset/Contentmesh.png';
 import Memoire from './asset/memoire.png'
+import Coverceont from "./asset/contentmesh-cover.png"
+import Covercram from "./asset/caramellescover.png"
+import CoverPerf from "./asset/performercover.png"
+import CoverZoo from "./asset/zoocover.png"
+import CoverOmn from "./asset/omnicitycover.png"
+import Zoo1 from "./asset/zoo1.png"
+import Zoo2 from "./asset/zoo2.gif"
+import Zoo3 from "./asset/zoo3.png"
+import Zoo4 from "./asset/zoo4.gif"
+import Zoo5 from "./asset/zoo5.png"
+import Zoo6 from "./asset/zoo6.gif"
+import Zoo7 from "./asset/zoo7.png"
+import Om1 from "./asset/om1.png"
+import Om2 from "./asset/om2.gif"
+import Om3 from "./asset/om3.png"
+import Caram1 from "./asset/caram1.png"
+import Caram2 from "./asset/caram2.gif"
+import Caram3 from "./asset/caram3.png"
+import Caram4 from "./asset/caram4.gif"
+import Caram5 from "./asset/caram5.png"
+
+
+
+
+
+
 
 const projets = [
   {
     id:0,
+    titre:"Content Mesh",
+    categorie: "projet",
+    date:2024,
+    hashtag:["#Interface #UX #UI #UserResearch"],
+    technique:"Esquisse numérique",
+    contexte:"Lors d'un hackathon, nous avons été sollicités pour concevoir une interface permettant aux utilisateurs de traduire des contenus audiovisuels tout en préservant l’émotion et l’authenticité de la voix originale.",
+    proposition:"Pour répondre à cette demande, nous avons d'abord identifié notre public cible : les créateurs de contenu. Cette identification nous a conduits à développer une interface conçue pour aider ces créateurs à élargir leur audience. L’outil propose la traduction de leurs contenus en s’appuyant sur des suggestions de régions géographiques et de plateformes les plus susceptibles de consommer leur production.",
+    images:[Content],
+    cover:Coverceont,
+    link:"https://www.figma.com/proto/qb3uyeBZqFV476EFANP6cC/ContentMesh?page-id=59%3A471&type=design&node-id=59-1599&t=wa2yxEljBkoeN93e-0&scaling=scale-down&starting-point-node-id=59%3A1662&show-proto-sidebar=1&hide-ui=1",
+    liensProto:"https://www.figma.com/proto/qb3uyeBZqFV476EFANP6cC/ContentMesh?page-id=59%3A471&type=design&node-id=59-1599&t=wa2yxEljBkoeN93e-0&scaling=scale-down&starting-point-node-id=59%3A1662&show-proto-sidebar=1&hide-ui=1"
+
+   
+  },
+  {
+    id:1,
+    titre:"Collection Zoologique",
+    categorie: "projet",
+    date:2024,
+    hashtag:["#UX #UI #Interface #DA "],
+    technique:"Esquisse numérique",
+    contexte:"La Collection de Zoologie de Santiago Aragon constitue un patrimoine scientifique d’exception, regroupant plusieurs milliers de spécimens, parmi lesquels des animaux naturalisés et des pièces anatomiques historiques. Ce projet avait pour ambition de mettre en valeur cette collection à travers une approche immersive et pédagogique, favorisant son accessibilité tant pour le grand public que pour les étudiants. En intégrant des outils numériques, l’objectif était de moderniser la transmission des connaissances tout en préservant l’héritage scientifique et culturel de cette collection unique.",
+    proposition:"Après nos échanges avec Santiago Aragon et la visite du site, nous avons identifié plusieurs enjeux liés à la Collection Zoologique. Son approche narrative, axée sur l’histoire individuelle de chaque animal, crée une expérience immersive et empathique, peu commune dans les musées traditionnels. Au-delà de son intérêt scientifique, Santiago souhaite utiliser cette collection comme un levier de réflexion sur l’Anthropocène, élargissant ainsi son impact. Toutefois, son emplacement au sein de l’université limite sa visibilité et sa reconnaissance. L’absence d’informations écrites, compensée par l’interaction directe avec Santiago, soulève la question de la transmission du savoir. Enfin, son rôle essentiel dans l’expérience des visiteurs met en évidence la nécessité de préserver et de pérenniser son influence au sein de la collection.",
+    images:[Zoo1,Zoo2,Zoo3,Zoo4,Zoo5,Zoo6,Zoo7],
+    cover:CoverZoo,
+    link:"https://www.figma.com/proto/weXuDDwouKhJLL9tgtwWeA/%F0%9F%93%9A-%5BProjet-pro%5D-Delivery-(Copy)?page-id=1428%3A325&node-id=1905-1590&viewport=-3227%2C392%2C0.19&t=uEKPeNqjRixtwiZW-1&scaling=min-zoom&content-scaling=fixed",
+    liensProto:"https://www.figma.com/proto/weXuDDwouKhJLL9tgtwWeA/%F0%9F%93%9A-%5BProjet-pro%5D-Delivery-(Copy)?page-id=1428%3A325&node-id=1905-1590&viewport=-3227%2C392%2C0.19&t=uEKPeNqjRixtwiZW-1&scaling=min-zoom&content-scaling=fixed"
+
+   
+  },
+  
+  
+  {
+    id:2,
+    titre:"Performer l'identité",
+    categorie: "archive",
+    date:2024,
+    hashtag:["#Recherche #CreativeCoding"],
+    technique:"Esquisse numérique",
+    contexte:"Les enjeux de ce mémoire résident dans l’exploration de la manière dont les designers graphiques peuvent s’émanciper des logiciels de PAO traditionnels, comme ceux de ma suite Adobe, pour adopter la programmation dans la création d’identités visuelles. Il s’agit de comprendre comment la programmation peut offrir de nouvelles libertés créatives et permettre la génération d’identités visuelles plus flexibles et évolutives, adaptées aux exigences actuelles du design numérique. Toutefois, cette transition présente des défis, notamment la complexité cognitive et technique que l’apprentissage du code impose aux designers. Le mémoire questionne ainsi le rapport entre créativité, outils numériques et liberté du geste du designer, tout en proposant une réflexion sur l’avenir de la discipline graphique dans un monde où la programmation pourrait jouer un rôle central.",
+    proposition:"Pour la publication de mon mémoire Performer l’identité, j’ai d’abord conçu une version imprimée soignée. La couverture intègre un motif en embossage généré par un algorithme de tri aléatoire, positionnant des caractères typographiques issus de mes recherches. Dessinés, découpés au laser et transformés en normographes, ces caractères ont permis la création du motif. Une version web a ensuite été développée pour en faciliter la diffusion.",
+    images:[Memoire],
+    cover:CoverPerf,
+    liensSite:"https://memoire-leonie-nollevalle.netlify.app/"
+
+   
+  },
+  {
+    id:3,
+    titre:"Caram'elles",
+    categorie: "projet",
+    date:2025,
+    hashtag:["#Branding #WebDesign #UI/UX"],
+    technique:"Affiche/Livret A2,Impression Riso",
+    descritpion:"Catalogue d'exposition réalisé à la demande d'Éric Choisy Bernard, Artiste, Designer Numérique, Bricodeur et enseignant.",
+    images:[Caram1, Caram2,Caram3,Caram4,Caram5],
+    link:"httpshttps://www.figma.com/proto/OYbCiD8Cw06suCYo9sfGAE/%F0%9F%8C%B7-Caramelles?page-id=4%3A2&node-id=604-4061&viewport=492%2C-1968%2C0.06&t=hrKEsO69tNqOSWqM-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=604%3A4061",
+    cover:Covercram,
+
+  },
+  
+  {
+    id:4,
+    titre:"Omnicity",
+    categorie: "projet",
+    date:2024,
+    hashtag:["#Branding #WebDesign #UI/UX"],
+    technique:"Affiche/Livret A2,Impression Riso",
+    descritpion:"Catalogue d'exposition réalisé à la demande d'Éric Choisy Bernard, Artiste, Designer Numérique, Bricodeur et enseignant.",
+    images:[Om1, Om2, Om3],
+    link:"https://deluxe-semifreddo-ffc501.netlify.app/",
+    cover:CoverOmn,
+
+  },
+
+  {
+    id:5,
     titre:"Closer",
     categorie: "archive",
     date:2019,
@@ -122,7 +224,7 @@ const projets = [
     images:[Closer1, Closer2, Closer3, Closer4, Closer5, Closer6],
   },
   {
-    id:1,
+    id:6,
     titre:"Ponctué de Blanc",
     categorie: "archive",
     date:2021,
@@ -132,7 +234,7 @@ const projets = [
     images:[PDB1, PDB2, PDB3, PDB4, PDB5, PDB6, PDB7, PDB8, PDB9, PDB10, PDB11, PDB12],
   },
   {
-    id:2,
+    id:7,
     titre:"Le zéphire",
     categorie: "archive",
     date:2021,
@@ -143,7 +245,7 @@ const projets = [
    
   },
   {
-    id:3,
+    id:8,
     titre:"GarageType",
     categorie: "archive",
     date:2020,
@@ -154,7 +256,7 @@ const projets = [
    
   },
   {
-    id:4,
+    id:9,
     titre:"Allié au choix",
     categorie: "archive",
     date:2021,
@@ -164,7 +266,7 @@ const projets = [
     images:[AAC1 ,AAC2, AAC3, AAC4, AAC5],
   },
   {
-    id:5,
+    id:10,
     titre:"Passage",
     categorie: "archive",
     date:2021,
@@ -174,7 +276,7 @@ const projets = [
     images:[Passage1, Passage2, Passage3, Passage4, Passage5],
   },
   {
-    id:6,
+    id:11,
     titre:"Ariane",
     categorie: "archive",
     date:2020,
@@ -185,7 +287,7 @@ const projets = [
    
   },
   {
-    id:7,
+    id:12,
     titre:"Art dans les chapelles",
     categorie: "archive",
     date:2021,
@@ -196,7 +298,7 @@ const projets = [
    
   },
   {
-    id:8,
+    id:13,
     titre:"Jdp",
     categorie: "archive",
     date:2021,
@@ -207,7 +309,7 @@ const projets = [
     videos:JDP2
   },
   {
-    id:9,
+    id:14,
     titre:"an",
     categorie: "archive",
     date:2021,
@@ -218,7 +320,7 @@ const projets = [
     },
 
   {
-    id:10,
+    id:15,
     titre:"Migratio",
     categorie: "archive",
     date:2019,
@@ -231,7 +333,7 @@ const projets = [
   
    
   {
-    id:11,
+    id:16,
     titre:"Fou de danse",
     categorie: "archive",
     date:2019,
@@ -243,7 +345,7 @@ const projets = [
    
   },
   {
-    id:12,
+    id:17,
     titre:"StillMoving",
     categorie: "archive",
     date:2020,
@@ -255,7 +357,7 @@ const projets = [
    
   },
   {
-    id:13,
+    id:18,
     titre:"Focus",
     categorie: "archive",
     date:2021,
@@ -266,7 +368,7 @@ const projets = [
     liensSite:"https://focus-wcs.netlify.app/",
   },
   {
-    id:14,
+    id:19,
     titre:"Discover",
     categorie: "archive",
     date:2021,
@@ -277,7 +379,7 @@ const projets = [
     liensSite:"https://discover-wcs.netlify.app/",
   },
   {
-    id:15,
+    id:20,
     titre:"DIY",
     categorie: "archive",
     date:2022,
@@ -290,7 +392,7 @@ const projets = [
 
   },
   {
-    id:16,
+    id:21,
     titre:"Laboratoire",
     categorie: "archive",
     date:2022,
@@ -300,53 +402,13 @@ const projets = [
     images:[LAB1, LAB2, LAB3, LAB4, LAB5, LAB7, LAB8, LAB9, LAB10, LAB11, LAB12, LAB13, LAB14, LAB15, LAB16, LAB17, LAB18, LAB19, LAB20, LAB21, LAB22, LAB23, LAB24, LAB25, LAB26],
   },
   
-  /////// Projets
+  
+  
+  
   {
-    id:17,
-    titre:"Performer l'identité",
-    categorie: "projet",
-    date:2024,
-    hashtag:["#Recherche #CreativeCoding"],
-    technique:"Esquisse numérique",
-    contexte:"Les enjeux de ce mémoire résident dans l’exploration de la manière dont les designers graphiques peuvent s’émanciper des logiciels de PAO traditionnels, comme ceux de ma suite Adobe, pour adopter la programmation dans la création d’identités visuelles. Il s’agit de comprendre comment la programmation peut offrir de nouvelles libertés créatives et permettre la génération d’identités visuelles plus flexibles et évolutives, adaptées aux exigences actuelles du design numérique. Toutefois, cette transition présente des défis, notamment la complexité cognitive et technique que l’apprentissage du code impose aux designers. Le mémoire questionne ainsi le rapport entre créativité, outils numériques et liberté du geste du designer, tout en proposant une réflexion sur l’avenir de la discipline graphique dans un monde où la programmation pourrait jouer un rôle central.",
-    proposition:"Pour la publication de mon mémoire Performer l’identité, j’ai d’abord conçu une version imprimée soignée. La couverture intègre un motif en embossage généré par un algorithme de tri aléatoire, positionnant des caractères typographiques issus de mes recherches. Dessinés, découpés au laser et transformés en normographes, ces caractères ont permis la création du motif. Une version web a ensuite été développée pour en faciliter la diffusion.",
-    images:[Memoire],
-    liensSite:"https://memoire-leonie-nollevalle.netlify.app/"
-
-   
-  },
-  {
-    id:18,
-    titre:"Collection Zoologique",
-    categorie: "projet",
-    date:2024,
-    hashtag:["#UX #UI #Interface #DA "],
-    technique:"Esquisse numérique",
-    contexte:"La Collection de Zoologie de Santiago Aragon constitue un patrimoine scientifique d’exception, regroupant plusieurs milliers de spécimens, parmi lesquels des animaux naturalisés et des pièces anatomiques historiques. Ce projet avait pour ambition de mettre en valeur cette collection à travers une approche immersive et pédagogique, favorisant son accessibilité tant pour le grand public que pour les étudiants. En intégrant des outils numériques, l’objectif était de moderniser la transmission des connaissances tout en préservant l’héritage scientifique et culturel de cette collection unique.",
-    proposition:"Après nos échanges avec Santiago Aragon et la visite du site, nous avons identifié plusieurs enjeux liés à la Collection Zoologique. Son approche narrative, axée sur l’histoire individuelle de chaque animal, crée une expérience immersive et empathique, peu commune dans les musées traditionnels. Au-delà de son intérêt scientifique, Santiago souhaite utiliser cette collection comme un levier de réflexion sur l’Anthropocène, élargissant ainsi son impact. Toutefois, son emplacement au sein de l’université limite sa visibilité et sa reconnaissance. L’absence d’informations écrites, compensée par l’interaction directe avec Santiago, soulève la question de la transmission du savoir. Enfin, son rôle essentiel dans l’expérience des visiteurs met en évidence la nécessité de préserver et de pérenniser son influence au sein de la collection.",
-    images:[Czsu],
-    liensProto:"https://www.figma.com/proto/weXuDDwouKhJLL9tgtwWeA/%F0%9F%93%9A-%5BProjet-pro%5D-Delivery-(Copy)?page-id=1428%3A325&node-id=1905-1590&viewport=-3227%2C392%2C0.19&t=uEKPeNqjRixtwiZW-1&scaling=min-zoom&content-scaling=fixed"
-
-   
-  },
-  {
-    id:19,
-    titre:"Content Mesh",
-    categorie: "projet",
-    date:2024,
-    hashtag:["#Interface #UX #UI #UserResearch"],
-    technique:"Esquisse numérique",
-    contexte:"Lors d'un hackathon, nous avons été sollicités pour concevoir une interface permettant aux utilisateurs de traduire des contenus audiovisuels tout en préservant l’émotion et l’authenticité de la voix originale.",
-    proposition:"Pour répondre à cette demande, nous avons d'abord identifié notre public cible : les créateurs de contenu. Cette identification nous a conduits à développer une interface conçue pour aider ces créateurs à élargir leur audience. L’outil propose la traduction de leurs contenus en s’appuyant sur des suggestions de régions géographiques et de plateformes les plus susceptibles de consommer leur production.",
-    images:[Content],
-    liensProto:"https://www.figma.com/proto/qb3uyeBZqFV476EFANP6cC/ContentMesh?page-id=59%3A471&type=design&node-id=59-1599&t=wa2yxEljBkoeN93e-0&scaling=scale-down&starting-point-node-id=59%3A1662&show-proto-sidebar=1&hide-ui=1"
-
-   
-  },
-  {
-    id:20,
+    id:22,
     titre:"La Grande Conversation",
-    categorie: "projet",
+    categorie: "archive",
     date:2023,
     hashtag:["#Interface #musée #UX #UI"],
     technique:"Esquisse numérique",
@@ -358,15 +420,17 @@ const projets = [
    
   },
   {
-    id:21,
+    id:23,
     titre:"Ne pas couvrir",
-    categorie: "projet",
+    categorie: "archive",
     date:2021,
     hashtag:["#Édition #Risographie"],
     technique:"Affiche/Livret A2,Impression Riso",
     descritpion:"Catalogue d'exposition réalisé à la demande d'Éric Choisy Bernard, Artiste, Designer Numérique, Bricodeur et enseignant.",
     images:[NPC1, NPC2, NPC3, NPC4],
   },
+ 
+
   // {
   //   id:22,
   //   titre:"Des femmes",

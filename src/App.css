@@ -60,12 +60,26 @@
   src: local('Helvetica Light'), url('./font/helvetica-light-587ebe5a59211.woff') format('woff');
   }
 
+.scroll-bar {
+  scrollbar-width: none;
+}
+
+.lebord {
+  border-top-width: 2px;
+  border-color: white;
+}
+
+.cardprojet{
+  width:35vw;
+}
 
 @media (min-width: 1280px) and (max-width: 2000px){
-
+.cardprojet{
+  width:35vw;
+}
   h2 {
     font-family: 'avara';
-    font-size: 60px;
+    font-size: 48px;
     line-height: 1;
     text-align: center;
     width: 40%;
@@ -80,6 +94,7 @@
     line-height: 1.1;
   
   }
+
   
   .expo {
     font-family: serif;
@@ -110,7 +125,9 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1280px){
-
+.cardprojet{
+  width:35vw;
+}
   h2 {
     font-family: 'avara';
     font-size: 60px;
@@ -159,6 +176,9 @@
 
 
 @media (min-width: 768px) and (max-width: 1024px) { 
+.cardprojet{
+  width:35vw;
+}
   h2 {
     font-family: 'avara';
     font-size: 60px;
@@ -207,7 +227,10 @@
  }
 
  @media (min-width: 360px) and (max-width: 768px) { 
-
+  
+.cardprojet{
+  width:80vw;
+}
   h2 {
     font-family: 'avara';
     font-size: 40px;
