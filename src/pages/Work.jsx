@@ -8,15 +8,15 @@ const Work = () => {
   const { id } = useParams();
 
   return (
+    
     <div className="w-screen h-screen flex-col  xl:flex-row xl:overflow-hidden flex md:flex-col">
-
       
-      <div className={projets[id].categorie === "archive" ? "w-full h-auto pt-10 xl:h-screen lg:h-screen md:h-screen xl:w-1/2 lg:w-1/2 md:w-full md:h-auto md:pt-20 md:pb-32" :"hidden"}>
+      <div className={projets[id].categorie === "archive" ? "w-full h-auto  pt-10 xl:h-screen lg:h-screen md:h-screen xl:w-1/2 lg:w-1/2 md:w-full md:h-auto md:pt-20 md:pb-32" :"hidden"}>
       <div className="w-full h-1/4 flex flex-col justify-center items-center pr-2">
       <h2 className="w-2/3 lg:w-1/2 md:w-1/2 sm:w-1/2 ">{projets[id].titre}<sup className="expo">({projets[id].date})</sup></h2>    
       </div>
       <div className="w-full flex gap-5 justify-center">
-      <div className="w-5/6 h-auto lg:w-2/3 lg:h-1/2 md:w-2/3 md:h-1/2 sm:w-2/3 sm:h-1/2">
+      <div className="rounded-lg w-5/6 h-auto lg:w-2/3 lg:h-1/2 md:w-2/3 md:h-1/2 sm:w-2/3 sm:h-1/2">
       <p className={projets[id].contexte ? "text-sm font-medium pb-5" : "hidden"}>CONTEXTE</p>
       <p className={projets[id].contexte ? "text-start lg:text-justify md:text-justify sm:text-justify": "pt-10 text-center lg:text-justify md:text-justify sm:text-justify md:pt-20"}>{projets[id].contexte ? projets[id].contexte : projets[id].descritpion}</p>
       <p className={projets[id].contexte ? "text-sm font-medium pb-5 pt-5" : "hidden"}>PROPOSITION</p>
@@ -53,18 +53,18 @@ const Work = () => {
 
        
       </div>
-      <div className={projets[id].categorie === "archive" ? "w-full lg:w-1/2 bg-black xl:overflow-y-scroll md:w-full" : "w-full  lg:w-full 2xl:px-24 xl:px-12 bg-black xl:overflow-y-scroll md:w-full"}>
+      <div className={projets[id].categorie === "archive" ? "w-full pt-32  lg:w-1/2 bg-black xl:overflow-y-scroll md:w-full" : "w-full pt-32  lg:w-full 2xl:px-24 xl:px-12 bg-black xl:overflow-y-scroll md:w-full"}>
       {projets[id].images.map((image) => {
         return (
           <div>
-          <img className="w-full" src={image} alt={projets[id].titre} />          
+          <img className="w-full rounded-2xl " src={image} alt={projets[id].titre} />          
           </div>
       );
       })}
       
       <div className={projets[id].categorie === "archive" ? "hidden" :'w-full flex items-center justify-between pt-5 pb-20 mt-10'}>
       <h3 className="	text-white text-lg pl-5 lg:pl-0 xl:pl-0 2xl:pl-0 lg:text-4xl xl:text-4xl 2xl:text-4xl font-bold">Essayer le projet</h3>
-      <a href={projets[id].link} className='bg-white px-4 py-2 rounded-lg mr-5 lg:mr-0 xl:mr-0 2xl:mr-0'>Découvrir ↗︎</a>
+      <a href={projets[id].link} className='bg-blacks text-whites px-4 py-2 rounded-lg mr-5 lg:mr-0 xl:mr-0 2xl:mr-0'>Découvrir ↗︎</a>
       </div>
 
       {projets[id].videos ? 
@@ -76,6 +76,7 @@ const Work = () => {
        : ""}
       </div>
     </div>
+    
   )
 }
 

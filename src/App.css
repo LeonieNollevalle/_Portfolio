@@ -1,65 +1,57 @@
 @font-face {
-  font-family: 'avara';
-  src: url(./font/Avara-Bold.ttf),
-  url(./font/Avara-Bold.woff),
-  url(./font/Avara-Bold.woff2);
+  font-family: "Helvetica";
+  src: "./font/HelveticaNowVar.woff2" format("woff2-variations");
+  font-weight: 125 950;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+body{
+  font-family: 'Helvetica', sans-serif;
+  background-color: #F0F0F1;
+  color: #191818;
 }
 
-@font-face {
-  font-family: 'Helvetica';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica'), url('./font/Helvetica.woff') format('woff');
-  }
-  
+:root {
+  --bg-color: #F0F0F1;
+  --black: #191818;
+  --light-grey:#C5C5C5;
+  --medium-grey:#E5E5E5;
+  --dark-grey:#4C4C4C;
+}
+.dot {
+  background-color:#45D764;
+  width:14px; 
+  height:14px;
+  display: inline-block;
+  animation: blink 2s infinite ease-in-out;
+}
+.tag-scroll{
+  scrollbar-width: none;
 
-  @font-face {
-  font-family: 'Helvetica Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Oblique'), url('./font/Helvetica-Oblique.woff') format('woff');
-  }
-  
+}
 
-  @font-face {
-  font-family: 'Helvetica Compressed';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Compressed'), url('./font/helvetica-compressed-5871d14b6903a.woff') format('woff');
-  }
-  
+.title-1{
+  font-size:5.3rem;
+  font-weight:400;
+  letter-spacing:-0.35rem; 
+  line-height:110px;
+}
 
-  @font-face {
-  font-family: 'Helvetica Rounded Bold';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Rounded Bold'), url('./font/helvetica-rounded-bold-5871d05ead8de.woff') format('woff');
-  }
-  
+.title-2{
+  font-size:11rem;
+  font-weight:500; 
+  letter-spacing:-0.68rem;
+  line-height:100px;
+}
+/* Respecte la préférence d’utilisateur */
+@media (prefers-reduced-motion: reduce) {
+  .dot { animation: none; opacity: 1; }
+}
 
-  @font-face {
-  font-family: 'Helvetica';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica'), url('./font/Helvetica-Bold.woff') format('woff');
-  }
-  
-
-  @font-face {
-  font-family: 'Helvetica Bold Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Bold Oblique'), url('./font/Helvetica-BoldOblique.woff') format('woff');
-  }
-  
-
-  @font-face {
-  font-family: 'Helvetica Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Light'), url('./font/helvetica-light-587ebe5a59211.woff') format('woff');
-  }
-
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.2; }  /* intensité du “clignotement” */
+}
 .scroll-bar {
   scrollbar-width: none;
 }
@@ -74,15 +66,21 @@
 }
 
 @media (min-width: 1280px) and (max-width: 2000px){
+
+
+
+
 .cardprojet{
   width:35vw;
 }
   h2 {
-    font-family: 'avara';
+    font-family: 'Helvetica';
+    font-weight: 520;
     font-size: 48px;
     line-height: 1;
     text-align: center;
-    width: 40%;
+    letter-spacing: -0.1rem;
+
   }
   
   h1 {
@@ -97,17 +95,19 @@
 
   
   .expo {
-    font-family: serif;
+    font-family: 'Helvetica';
     font-size: 20px;
     font-style: italic;
     vertical-align: 20px;
+        font-weight: 400;
+
   }
   
   h4 {
     font-family: 'Helvetica';
-    font-weight: 500;
+    font-weight: 510;
     font-size: 180px;
-    color: #EBEBEB;
+    color: var(--medium-grey);
   }
   
   .bg-port {
@@ -129,7 +129,7 @@
   width:35vw;
 }
   h2 {
-    font-family: 'avara';
+    font-family: 'Helvetica';
     font-size: 60px;
     line-height: 1;
     text-align: center;
@@ -147,17 +147,19 @@
   }
   
   .expo {
-    font-family: serif;
     font-size: 20px;
-    font-style: italic;
+    font-family: 'Helvetica';
+    font-family: italic;
     vertical-align: 20px;
+        font-weight: 400;
+
   }
   
   h4 {
     font-family: 'Helvetica';
-    font-weight: 500;
+    font-weight: 550;
     font-size: 160px;
-    color: #EBEBEB;
+    color: var(--medium-grey);
   }
   
   .bg-port {
@@ -180,11 +182,12 @@
   width:35vw;
 }
   h2 {
-    font-family: 'avara';
-    font-size: 60px;
+    font-family: 'Helvetica';
+    font-weight: 520;
+    font-size: 40px;
+    letter-spacing: -0.1rem;
     line-height: 1;
     text-align: center;
-    width: 40%;
   }
   
   h1 {
@@ -198,10 +201,12 @@
   }
   
   .expo {
-    font-family: serif;
+font-family: 'Helvetica';
     font-size: 20px;
     font-style: italic;
     vertical-align: 20px;
+        font-weight: 400;
+
   }
   
   h4 {
@@ -223,20 +228,48 @@
     line-height: 1.1;
   
   }
+    .title-1{
+  font-size:2rem;
+  font-weight:420;
+  letter-spacing:-0.2rem; 
+  line-height:70px;
+}
+.title-2{
+  font-size:4rem;
+  font-weight:520; 
+  letter-spacing:-0.25rem;
+  line-height:10px;
+}
 
  }
 
  @media (min-width: 360px) and (max-width: 768px) { 
-  
+
+  .title-1{
+  font-size:2rem;
+  font-weight:420;
+  letter-spacing:-0.2rem; 
+  line-height:70px;
+}
+.title-2{
+  font-size:4rem;
+  font-weight:520; 
+  letter-spacing:-0.25rem;
+  line-height:10px;
+}
+  .nav-mob{
+    display: none;
+  }
 .cardprojet{
   width:80vw;
 }
   h2 {
-    font-family: 'avara';
+    font-family: 'Helvetica';
+    font-weight: 520;
     font-size: 40px;
+    letter-spacing: -0.1rem;
     line-height: 1;
     text-align: center;
-    width: 100%;
   }
   
   h1 {
@@ -250,7 +283,8 @@
   }
   
   .expo {
-    font-family: serif;
+    font-family: 'Helvetica';
+    font-weight: 400;
     font-size: 16px;
     font-style: italic;
     vertical-align: 10px;

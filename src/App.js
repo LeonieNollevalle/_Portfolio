@@ -14,7 +14,6 @@ function App() {
     <div>
       <Nav/>
   <Routes>
-
   <Route exact path="/contact" element={<Contact />} />
     <Route path="/work/:id" element={<Work />} />
     <Route exact path="/" element={<Home />} />

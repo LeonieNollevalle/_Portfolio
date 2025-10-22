@@ -3,10 +3,13 @@ import projets from '../data';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import Footer from "./Footer.jsx";
+
 
 function Home() {
-// const messages = ["Print","IHM","Web"]
 const [index, setIndex] = useState(0);
+const [image, setImage] = useState(0)
+
 console.log(index)
 
   useEffect(() => {
@@ -31,41 +34,35 @@ for (const projet of projets) {
   return (
     <div className="w-screen h-screen overflow-x-hidden pb-10">
       <div className="h-screen w-screen absolute flex flex-col justify-between items-center blur-sm bg-port lg:pb-0 md:pb-0 sm:pb-0 pb-20">
-        <h4 className="pt-16">PORTFOLIO</h4>
+        <h4 className="pt-12">PORTFOLIO</h4>
         <h4>2019—2025</h4>
       </div>
-      <div className="w-full h-auto pt-16 lg:pt-28  md:pt-32 sm:pt-32 pb-10 flex flex-col items-center justify-center ">
-      <div className="w-full flex flex-col items-center m-O p-O">
-      <svg width="217" height="74" viewBox="0 0 217 74" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.76012 22.44L1.92012 18.6H19.2001L28.8001 22.44L34.5601 28.2L36.4801 37.8L34.5601 47.4L30.7201 53.16L23.0401 57H1.92012L5.76012 53.16V22.44ZM28.8001 47.4V30.12L26.8801 26.28L23.0401 22.44L19.2001 20.52H13.4401L11.5201 22.44V53.16L13.4401 55.08H21.1201L24.9601 53.16L28.8001 47.4ZM43.6351 32.04L49.3951 30.12H53.2351L58.9951 32.04L62.8351 37.8L60.9151 41.64L45.5551 45.48L47.4751 53.16L53.2351 55.08L57.0751 53.16L60.9151 49.32L62.8351 51.24L58.9951 55.08L55.1551 57H49.3951L43.6351 55.08L39.7951 47.4V39.72L43.6351 32.04ZM55.1551 33.96L51.3151 32.04L47.4751 33.96L45.5551 43.56L55.1551 39.72V33.96ZM81.557 30.12L83.477 39.72H81.557L77.717 33.96H73.877L71.957 35.88V37.8L83.477 45.48L85.397 49.32L83.477 55.08L79.637 57H73.877L70.037 55.08L68.117 57L66.197 47.4H68.117L71.957 53.16L75.797 55.08L79.637 53.16V49.32L68.117 41.64L66.197 37.8L68.117 32.04L75.797 30.12L79.637 32.04L81.557 30.12ZM92.1039 35.88L88.2639 33.96L97.8639 30.12V53.16L101.704 57H88.2639L92.1039 53.16V35.88ZM95.9439 26.28H94.0239L90.1839 24.36V22.44L92.1039 18.6H94.0239L97.8639 20.52V22.44L95.9439 26.28ZM124.761 32.04L130.521 30.12L132.441 35.88H130.521L126.681 33.96L128.601 37.8V41.64L126.681 45.48L120.921 49.32L115.161 51.24L124.761 55.08L130.521 60.84V64.68L126.681 70.44L120.921 72.36H117.081L109.401 70.44L105.561 64.68V60.84L113.241 55.08L109.401 53.16L111.321 51.24L115.161 49.32L109.401 47.4L105.561 41.64V37.8L109.401 32.04L115.161 30.12H119.001L124.761 32.04ZM120.921 33.96L117.081 32.04L113.241 33.96L111.321 39.72L113.241 45.48L117.081 47.4L120.921 45.48L122.841 39.72L120.921 33.96ZM120.921 58.92L115.161 57L111.321 60.84V64.68L115.161 68.52L120.921 70.44L124.761 66.6V62.76L120.921 58.92ZM147.782 57H134.342L138.182 53.16V35.88L134.342 33.96L143.942 30.12L142.022 37.8L147.782 32.04L151.622 30.12L159.302 32.04L161.222 35.88V53.16L165.062 57H151.622L155.462 53.16V35.88L153.542 33.96H149.702L143.942 39.72V53.16L147.782 57ZM170.807 32.04L176.567 30.12H180.407L186.167 32.04L190.007 37.8L188.087 41.64L172.727 45.48L174.647 53.16L180.407 55.08L184.247 53.16L188.087 49.32L190.007 51.24L186.167 55.08L182.327 57H176.567L170.807 55.08L166.967 47.4V39.72L170.807 32.04ZM182.327 33.96L178.487 32.04L174.647 33.96L172.727 43.56L182.327 39.72V33.96ZM192.409 33.96L203.929 30.12L202.009 37.8V39.72L207.769 32.04L211.609 30.12L215.449 32.04V35.88L211.609 41.64H209.689V35.88H207.769L203.929 39.72V53.16L207.769 57H194.329L198.169 53.16V35.88L192.409 33.96Z" fill="black"/>
-<circle cx="94" cy="22" r="7" fill="white"/>
-<path d="M42.1904 14.232H46.7504C48.0464 14.232 48.9744 14.008 49.5344 13.56C50.1104 13.096 50.3984 12.408 50.3984 11.496C50.3984 10.888 50.3024 10.408 50.1104 10.056C49.9184 9.704 49.6544 9.432 49.3184 9.24C48.9824 9.048 48.5904 8.928 48.1424 8.88C47.7104 8.816 47.2464 8.784 46.7504 8.784H42.1904V14.232ZM39.9104 6.864H46.1264C46.4944 6.864 46.8864 6.872 47.3024 6.888C47.7344 6.888 48.1584 6.912 48.5744 6.96C48.9904 6.992 49.3744 7.048 49.7264 7.128C50.0944 7.208 50.4064 7.328 50.6624 7.488C51.2224 7.824 51.6944 8.288 52.0784 8.88C52.4784 9.472 52.6784 10.2 52.6784 11.064C52.6784 11.976 52.4544 12.768 52.0064 13.44C51.5744 14.096 50.9504 14.584 50.1344 14.904V14.952C51.1904 15.176 51.9984 15.656 52.5584 16.392C53.1184 17.128 53.3984 18.024 53.3984 19.08C53.3984 19.704 53.2864 20.312 53.0624 20.904C52.8384 21.496 52.5024 22.024 52.0544 22.488C51.6224 22.936 51.0784 23.304 50.4224 23.592C49.7824 23.864 49.0384 24 48.1904 24H39.9104V6.864ZM42.1904 22.08H47.9024C48.9104 22.08 49.6944 21.808 50.2544 21.264C50.8304 20.72 51.1184 19.968 51.1184 19.008C51.1184 18.448 51.0144 17.984 50.8064 17.616C50.5984 17.248 50.3184 16.96 49.9664 16.752C49.6304 16.528 49.2384 16.376 48.7904 16.296C48.3424 16.2 47.8784 16.152 47.3984 16.152H42.1904V22.08ZM54.4921 11.592H56.4121V14.208H56.4601C56.9561 13.2 57.5641 12.456 58.2841 11.976C59.0041 11.496 59.9161 11.272 61.0201 11.304V13.464C60.2041 13.464 59.5081 13.576 58.9321 13.8C58.3561 14.024 57.8921 14.352 57.5401 14.784C57.1881 15.216 56.9321 15.744 56.7721 16.368C56.6121 16.976 56.5321 17.68 56.5321 18.48V24H54.4921V11.592ZM72.1083 23.952C71.7563 24.16 71.2683 24.264 70.6443 24.264C70.1163 24.264 69.6923 24.12 69.3723 23.832C69.0683 23.528 68.9163 23.04 68.9163 22.368C68.3563 23.04 67.7003 23.528 66.9483 23.832C66.2123 24.12 65.4123 24.264 64.5483 24.264C63.9883 24.264 63.4523 24.2 62.9403 24.072C62.4443 23.944 62.0123 23.744 61.6443 23.472C61.2763 23.2 60.9803 22.848 60.7563 22.416C60.5483 21.968 60.4443 21.432 60.4443 20.808C60.4443 20.104 60.5643 19.528 60.8043 19.08C61.0443 18.632 61.3563 18.272 61.7403 18C62.1403 17.712 62.5883 17.496 63.0843 17.352C63.5963 17.208 64.1163 17.088 64.6443 16.992C65.2043 16.88 65.7323 16.8 66.2283 16.752C66.7403 16.688 67.1883 16.608 67.5723 16.512C67.9563 16.4 68.2603 16.248 68.4843 16.056C68.7083 15.848 68.8203 15.552 68.8203 15.168C68.8203 14.72 68.7323 14.36 68.5563 14.088C68.3963 13.816 68.1803 13.608 67.9083 13.464C67.6523 13.32 67.3563 13.224 67.0203 13.176C66.7003 13.128 66.3803 13.104 66.0603 13.104C65.1963 13.104 64.4763 13.272 63.9003 13.608C63.3243 13.928 63.0123 14.544 62.9643 15.456H60.9243C60.9563 14.688 61.1163 14.04 61.4043 13.512C61.6923 12.984 62.0763 12.56 62.5563 12.24C63.0363 11.904 63.5803 11.664 64.1883 11.52C64.8123 11.376 65.4763 11.304 66.1803 11.304C66.7403 11.304 67.2923 11.344 67.8363 11.424C68.3963 11.504 68.9003 11.672 69.3483 11.928C69.7963 12.168 70.1563 12.512 70.4283 12.96C70.7003 13.408 70.8363 13.992 70.8363 14.712V21.096C70.8363 21.576 70.8603 21.928 70.9083 22.152C70.9723 22.376 71.1643 22.488 71.4843 22.488C71.6603 22.488 71.8683 22.448 72.1083 22.368V23.952ZM68.7963 17.592C68.5403 17.784 68.2043 17.928 67.7883 18.024C67.3723 18.104 66.9323 18.176 66.4683 18.24C66.0203 18.288 65.5643 18.352 65.1003 18.432C64.6363 18.496 64.2203 18.608 63.8523 18.768C63.4843 18.928 63.1803 19.16 62.9403 19.464C62.7163 19.752 62.6043 20.152 62.6043 20.664C62.6043 21 62.6683 21.288 62.7963 21.528C62.9403 21.752 63.1163 21.936 63.3243 22.08C63.5483 22.224 63.8043 22.328 64.0923 22.392C64.3803 22.456 64.6843 22.488 65.0043 22.488C65.6763 22.488 66.2523 22.4 66.7323 22.224C67.2123 22.032 67.6043 21.8 67.9083 21.528C68.2123 21.24 68.4363 20.936 68.5803 20.616C68.7243 20.28 68.7963 19.968 68.7963 19.68V17.592ZM72.5669 11.592H74.4869V13.56H74.5349C75.3829 12.056 76.7269 11.304 78.5669 11.304C79.3829 11.304 80.0629 11.416 80.6069 11.64C81.1509 11.864 81.5909 12.176 81.9269 12.576C82.2629 12.976 82.4949 13.456 82.6229 14.016C82.7669 14.56 82.8389 15.168 82.8389 15.84V24H80.7989V15.6C80.7989 14.832 80.5749 14.224 80.1269 13.776C79.6789 13.328 79.0629 13.104 78.2789 13.104C77.6549 13.104 77.1109 13.2 76.6469 13.392C76.1989 13.584 75.8229 13.856 75.5189 14.208C75.2149 14.56 74.9829 14.976 74.8229 15.456C74.6789 15.92 74.6069 16.432 74.6069 16.992V24H72.5669V11.592ZM85.9509 17.904C85.9509 18.48 86.0229 19.048 86.1669 19.608C86.3269 20.152 86.5589 20.64 86.8629 21.072C87.1829 21.504 87.5829 21.848 88.0629 22.104C88.5589 22.36 89.1349 22.488 89.7909 22.488C90.4789 22.488 91.0629 22.352 91.5429 22.08C92.0229 21.808 92.4149 21.456 92.7189 21.024C93.0229 20.576 93.2389 20.072 93.3669 19.512C93.5109 18.952 93.5829 18.384 93.5829 17.808C93.5829 17.2 93.5109 16.616 93.3669 16.056C93.2229 15.48 92.9909 14.976 92.6709 14.544C92.3669 14.112 91.9669 13.768 91.4709 13.512C90.9749 13.24 90.3749 13.104 89.6709 13.104C88.9829 13.104 88.3989 13.24 87.9189 13.512C87.4389 13.784 87.0549 14.144 86.7669 14.592C86.4789 15.04 86.2709 15.552 86.1429 16.128C86.0149 16.704 85.9509 17.296 85.9509 17.904ZM95.5509 24H93.5109V22.32H93.4629C93.1269 23.008 92.5989 23.504 91.8789 23.808C91.1589 24.112 90.3669 24.264 89.5029 24.264C88.5429 24.264 87.7029 24.088 86.9829 23.736C86.2789 23.384 85.6869 22.912 85.2069 22.32C84.7429 21.728 84.3909 21.04 84.1509 20.256C83.9109 19.472 83.7909 18.64 83.7909 17.76C83.7909 16.88 83.9029 16.048 84.1269 15.264C84.3669 14.48 84.7189 13.8 85.1829 13.224C85.6629 12.632 86.2549 12.168 86.9589 11.832C87.6789 11.48 88.5109 11.304 89.4549 11.304C89.7749 11.304 90.1189 11.336 90.4869 11.4C90.8549 11.464 91.2229 11.576 91.5909 11.736C91.9589 11.88 92.3029 12.08 92.6229 12.336C92.9589 12.576 93.2389 12.88 93.4629 13.248H93.5109V6.864H95.5509V24ZM107.553 13.464C107.793 13.304 108.049 13.128 108.321 12.936C108.593 12.744 108.841 12.528 109.065 12.288C109.289 12.048 109.473 11.784 109.617 11.496C109.761 11.192 109.833 10.856 109.833 10.488C109.833 9.992 109.657 9.568 109.305 9.216C108.953 8.848 108.473 8.664 107.865 8.664C107.385 8.664 106.937 8.816 106.521 9.12C106.105 9.408 105.897 9.864 105.897 10.488C105.897 10.744 105.945 11 106.041 11.256C106.153 11.512 106.289 11.768 106.449 12.024C106.609 12.264 106.785 12.504 106.977 12.744C107.169 12.984 107.361 13.224 107.553 13.464ZM111.945 21.864C111.433 22.664 110.729 23.264 109.833 23.664C108.953 24.064 108.041 24.264 107.097 24.264C105.945 24.264 105.017 24.088 104.313 23.736C103.609 23.384 103.065 22.96 102.681 22.464C102.297 21.968 102.041 21.456 101.913 20.928C101.801 20.4 101.745 19.96 101.745 19.608C101.745 18.936 101.849 18.344 102.057 17.832C102.281 17.32 102.569 16.864 102.921 16.464C103.289 16.048 103.713 15.68 104.193 15.36C104.689 15.024 105.209 14.712 105.753 14.424C105.513 14.088 105.281 13.768 105.057 13.464C104.833 13.16 104.625 12.856 104.433 12.552C104.257 12.232 104.113 11.904 104.001 11.568C103.905 11.216 103.857 10.824 103.857 10.392C103.857 9.928 103.937 9.488 104.097 9.072C104.273 8.64 104.521 8.264 104.841 7.944C105.177 7.608 105.585 7.344 106.065 7.152C106.545 6.96 107.097 6.864 107.721 6.864C108.249 6.864 108.761 6.936 109.257 7.08C109.769 7.224 110.217 7.448 110.601 7.752C110.985 8.04 111.289 8.408 111.513 8.856C111.753 9.288 111.873 9.792 111.873 10.368C111.873 10.88 111.785 11.36 111.609 11.808C111.433 12.24 111.193 12.64 110.889 13.008C110.585 13.376 110.241 13.712 109.857 14.016C109.473 14.304 109.073 14.568 108.657 14.808L111.753 18.576C112.073 17.68 112.257 16.792 112.305 15.912H114.249C114.201 16.424 114.145 16.864 114.081 17.232C114.033 17.584 113.961 17.912 113.865 18.216C113.785 18.52 113.681 18.824 113.553 19.128C113.425 19.416 113.273 19.752 113.097 20.136L116.433 24H113.769L111.945 21.864ZM106.881 15.72C106.481 15.944 106.097 16.176 105.729 16.416C105.377 16.656 105.065 16.928 104.793 17.232C104.521 17.536 104.305 17.88 104.145 18.264C103.985 18.632 103.905 19.072 103.905 19.584C103.905 20.016 103.993 20.416 104.169 20.784C104.361 21.136 104.609 21.44 104.913 21.696C105.217 21.936 105.561 22.128 105.945 22.272C106.345 22.416 106.753 22.488 107.169 22.488C107.953 22.488 108.649 22.304 109.257 21.936C109.881 21.568 110.401 21.072 110.817 20.448L106.881 15.72ZM135.422 17.808C135.422 20 134.838 21.648 133.67 22.752C132.502 23.84 130.838 24.384 128.678 24.384C126.47 24.384 124.742 23.864 123.494 22.824C122.262 21.768 121.646 20.096 121.646 17.808V6.864H123.926V17.808C123.926 19.344 124.334 20.512 125.15 21.312C125.966 22.096 127.142 22.488 128.678 22.488C130.134 22.488 131.238 22.096 131.99 21.312C132.758 20.512 133.142 19.344 133.142 17.808V6.864H135.422V17.808ZM137.718 6.864H139.998V24H137.718V6.864ZM141.721 16.368H148.657V18.288H141.721V16.368ZM163.961 17.808C163.961 20 163.377 21.648 162.209 22.752C161.041 23.84 159.377 24.384 157.217 24.384C155.009 24.384 153.281 23.864 152.033 22.824C150.801 21.768 150.185 20.096 150.185 17.808V6.864H152.465V17.808C152.465 19.344 152.873 20.512 153.689 21.312C154.505 22.096 155.681 22.488 157.217 22.488C158.673 22.488 159.777 22.096 160.529 21.312C161.297 20.512 161.681 19.344 161.681 17.808V6.864H163.961V17.808ZM170.242 15.192L164.602 6.864H167.338L171.61 13.56L176.074 6.864H178.618L172.954 15.192L178.978 24H176.194L171.586 16.92L166.834 24H164.29L170.242 15.192Z" fill="black"/>
-</svg>
+      <div id="home" className="w-full h-auto pb-10 flex flex-col items-center justify-center ">
+      <div style={{height:"70vh"}} className="bg-bgColor w-full flex flex-col items-end justify-end gap-10 pb-12  lg:pb-0 md:pb-0lg:gap-0 md:gap-0  px-5 lg:flex-row lg:items-end lg:justify-between md:justify-between md:flex-row md:items-end sm:flex-row sm:items-start">
+        <div className=" flex items-end justify-start lg:justify-start lg:w-1/3 lg:pt-2 md:justify-start md:pt-0 md:w-1/2 sm:w-1/2 text-lg">
+        <p style ={{fontSize:"14px"}} className="w-full lg:pb-24 md:pb-24  lg:w-2/3 md:w-full sm:3/4">Designer hybride de par mon parcours, je me sers de chacune de mes compétences acquises dans le domaine du design graphique, du développement web et de l’UX design, afin de développer une expérience centrée utilisateurs en cohérence avec l’identité de marque du projet. </p>
+        </div>
+       <div className='w-auto flex flex-col justify-center items-end'>
+        <h2 className='title-1'>Brand & UI-UX</h2>
+        <h1 className='title-2'>Designer</h1>
+       </div>
 
       </div>
-      <div className=" w-full  flex flex-col items-center justify-center pt-5 lg:flex-row lg:items-start md:flex-row md:items-start sm:flex-row sm:items-start">
-        <div className="w-5/6 justify-center items-center flex flex-col text-lg lg:w-1/2 lg:items-end md:w-1/2 md:items-end sm:w-1/2 sm:items-end ">
-        
-        </div>
-        <div className="pt-5  flex items-center justify-center lg:justify-start lg:w-1/2 lg:pt-10 md:justify-start md:pt-0 md:w-1/2 sm:w-1/2 text-lg">
-        <p style ={{fontSize:"14px"}} className="w-5/6  lg:w-2/3 md:w-3/4 sm:3/4">Designer hybrides de par mon parcours, je me sers de chacune de mes compétences acquises dans le domaine du design graphique, du développement web et de l’UX design, afin de développer une expérience centrée utilisateurs en cohérence avec l’identité de marque du projet. </p>
-        </div>
-      
+
       </div>
-      </div>
-      <div className="w-full h-auto  flex flex-col items-center  justify-start">
-      <h2>Projets<sup className="expo">({nbpro})</sup></h2>
+      <div id="projets" className="w-full h-auto  pl-5 flex flex-col items-start justify-start">
+      <h2>Derniers Projets<sup className="expo">( {nbpro} )</sup></h2>
       </div>
 
-      <div style={{scrollbarWidth:"none"}} className="w-full h-auto  flex flex-col items-start overflow-x-scroll justify-center">
-      <div style={{height:"50vh", minWidth:"100vw"}} className="pl-10 mt-5 items-center justify-start gap-5 flex  lg:flex-row md:flex-row sm:flex-row">
+      <div style={{scrollbarWidth:"none"}} className="w-full h-auto  flex flex-col items-start overflow-x-scroll justify-center ">
+      <div style={{height:"50vh", minWidth:"100vw"}} className="pl-5 mt-5 items-center justify-start gap-5 flex  lg:flex-row md:flex-row sm:flex-row">
       {projets.map((projet) => {
         return (
           <Link to={`/work/${projet.id}`}>
-          <div className="w-full flex flex-col items-start justify-start text-xl hover:font-medium  cursor-pointer ">
-          <div style={{height:"40vh",backgroundImage:`url(${projet.cover})`}} className={projet.categorie && projet.categorie === "projet" ? " cardprojet bg-center	 rounded-lg bg-gray-400 border-2 border-black bg-cover	": "cardprojet hidden"}>
+          <div className="w-full flex flex-col items-start justify-start text-xl font-medium hover:font-semibold cursor-pointer grayscale hover:grayscale-0">
+          <div style={{height:"40vh",backgroundImage:`url(${projet.cover})`}} className={projet.categorie && projet.categorie === "projet" ? "  cardprojet bg-center	 rounded-lg bg-gray-400 border-2 border-black bg-cover": "cardprojet hidden"}>
           </div>
-          <a style={{fontSize:"16px"}} className="pt-3 w-auto text-nowrap	  hover:font-medium cursor-pointer" href="/work/:id"> {projet.categorie && projet.categorie === "projet"  ? projet.titre  +" ↗︎": false}</a>
+          <a style={{fontSize:"16px", fontFamily:"Helvetica"}} className="pt-3 w-auto text-nowrap font-medium	 hover:font-semibold	 cursor-pointer" href="/work/:id"> {projet.categorie && projet.categorie === "projet"  ? projet.titre : false}</a>
           </div>  
           </Link>    
           );
@@ -73,13 +70,17 @@ for (const projet of projets) {
       </div>
       </div>    
       <div className="w-full h-auto pb-10 flex flex-col items-center justify-start pt-10">
-      <h2>Archives<sup className="expo">({nbarch})</sup></h2>
-      <div className="w-full flex flex-col lg:flex-row md:flex-row sm:flex-row">
-      <div className="flex-none lg:w-1/2 md:w-1/2 sm:w-1/2"></div>
-      <div className="w-full items-center flex flex-col pt-5 lg:items-start lg:w-1/2 md:items-start md:w-1/2 sm:items-start sm:w-1/2 ">
+      <h2>Archives<sup className="expo">( {nbarch} )</sup></h2>
+      <div className=" relative w-full flex flex-col lg:flex-row md:flex-row sm:flex-row">
+      <div className=" flex-none lg:w-1/2 md:w-1/2 sm:w-1/2">
+        <img style={{ left:"20vw"}} src={projets[image].thumbnail} alt='' className='absolute w-1/4  top-8'></img>
+      </div>
+      <div className="  w-full items-center flex flex-col pt-5 lg:items-start lg:w-1/2 md:items-start md:w-1/2 sm:items-start sm:w-1/2 ">
+
+
       {projets.map((projet) => {
         return (
-          <Link to={`/work/${projet.id}`}> <div className="w-full flex justify-start text-2xl hover:font-bold cursor-pointer ">
+          <Link to={`/work/${projet.id}`} onMouseEnter={()=> setImage(projet.id)} onMouseLeave={ ()=> setImage(0)}> <div  className="w-full flex justify-start text-2xl hover:font-bold cursor-pointer ">
           <a className=" text-nowrap font-medium hover:font-bold cursor-pointer" href="/work/:id"> {projet.categorie && projet.categorie !== "projet"  ? projet.titre : ""}</a>
           <a href="/work/:id" className=" text-nowrap font-light italic">{projet.categorie && projet.categorie !== "projet"  ? "—"+projet.date : ""}</a>
           <a href="/work/:id" className="hidden xl:flex lg:hidden md:hidden  truncate ml-2 font-light italic">{projet.categorie && projet.categorie !== "projet"  ? " "+projet.hashtag : ""}</a>
@@ -89,7 +90,7 @@ for (const projet of projets) {
       </div>
       </div>
       </div>
-      
+      <Footer/>
     </div>
   );
 }
