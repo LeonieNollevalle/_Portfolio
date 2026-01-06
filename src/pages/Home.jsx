@@ -40,10 +40,10 @@ for (const projet of projets) {
       <div id="home" className="w-full h-auto pb-10 flex flex-col items-center justify-center ">
       <div style={{height:"70vh"}} className="bg-bgColor w-full flex flex-col items-end justify-end gap-10 pb-12  lg:pb-0 md:pb-0lg:gap-0 md:gap-0  px-5 lg:flex-row lg:items-end lg:justify-between md:justify-between md:flex-row md:items-end sm:flex-row sm:items-start">
         <div className=" flex items-end justify-start lg:justify-start lg:w-1/3 lg:pt-2 md:justify-start md:pt-0 md:w-1/2 sm:w-1/2 text-lg">
-        <p style ={{fontSize:"14px"}} className="w-full lg:pb-24 md:pb-24  lg:w-2/3 md:w-full sm:3/4">Designer hybride de par mon parcours, je me sers de chacune de mes compétences acquises dans le domaine du design graphique, du développement web et de l’UX design, afin de développer une expérience centrée utilisateurs en cohérence avec l’identité de marque du projet. </p>
+        <p style ={{fontSize:"14px"}} className="w-full lg:pb-24 md:pb-24  lg:w-2/3 md:w-full sm:3/4">Product Designer UX/UI, je m’appuie sur un parcours transversal mêlant design graphique, développement web et UX design pour concevoir des expériences centrées utilisateurs, cohérentes et adaptées aux enjeux du produit.</p>
         </div>
        <div className='w-auto flex flex-col justify-center items-end'>
-        <h2 className='title-1'>Brand & UI-UX</h2>
+        <h2 className='title-1'>Product & UI-UX</h2>
         <h1 className='title-2'>Designer</h1>
        </div>
 

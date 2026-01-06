@@ -26,7 +26,7 @@ const Footer = () => {
                 color: "var(--light-grey)",
               }}
             >
-              Rennes, France
+              Nice, France
             </p>
           </div>
           <div
@@ -99,22 +99,11 @@ const Footer = () => {
             style={{ textAlign: "justify" }}
             className="text-whites w-full lg:w-1/2 md:w-1/2 pt-10"
           >
-            Designer hybride de par mon parcours, je me sers de chacune de mes
-            compétences acquises dans le domaine du design graphique, du
-            développement web et de l’UX design, afin de développer une
-            expérience centrée utilisateurs en cohérence avec l’identité de
-            marque du projet. Un large regard sur le Design d’interfaces qui m’a
-            amené durant mes années d’études à me questionner sur le geste et
-            les outils des designers graphiques et d’interface.
+            Product Designer UX/UI, mon parcours pluridisciplinaire m’a permis de développer une approche globale du design d’interface, à la croisée du design graphique, du développement web et de l’UX design. J’articule ces compétences pour concevoir des expériences numériques centrées sur les utilisateurs, cohérentes avec l’identité et les enjeux du produit.
+Cette vision élargie du design d’interfaces m’a amenée, au fil de mes années d’études, à interroger le rôle du geste et des outils dans les pratiques des designers graphiques et d’interface.
             <br />
-            <br /> Notamment sur l’utilisation de la programmation comme un
-            outil d’expression singulier permettant de se libérer des
-            algorithmes des logiciels qui formaterait le geste des designers. De
-            plus, l’utilisation de la programmation comme outils de création
-            permettrait d’utiliser des fonctionnalités inhérentes à la
-            programmation comme le code génératif ou encore les combinatoires.
-            Un engouement pour la recherche et le questionnement qui trouve sa
-            place dans chacun des projets créatifs que j’entreprends.
+            <br /> Je m’intéresse notamment à la programmation comme outil d’expression à part entière, capable de dépasser les cadres imposés par les logiciels et d’ouvrir de nouveaux champs créatifs.
+Le code devient alors un véritable levier de conception, permettant d’explorer des approches telles que le design génératif ou les systèmes combinatoires. Cette démarche de recherche et d’expérimentation nourrit l’ensemble de mes projets et s’inscrit pleinement dans ma manière de concevoir des produits numériques réfléchis, évolutifs et porteurs de sens.
           </p>
         </div>
         <div className=" tag-scroll w-full overflow-x-auto pt-20">

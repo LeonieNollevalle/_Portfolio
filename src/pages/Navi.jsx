@@ -36,7 +36,7 @@ const changeContact = ()=> {
     <div style={{zIndex:"10"}} className="absolute flex lg:justify-between md:justify-between justify-between items-center w-screen pl-5 pt-8 py-5 pr-5 backdrop-blur">
       <Link to={`/`} >
       <h3 style={{fontFamily: 'Helvetica', fontSize:'16px',fontWeight:"550",letterSpacing:'0rem',color:"#191818"}}>Léonie Nollevalle</h3>
-      <p style={{fontFamily:"Helvetica", fontSize:"12px", fontWeight:'550', color:"var(--light-grey)"}}>Nantes, France</p>
+      <p style={{fontFamily:"Helvetica", fontSize:"12px", fontWeight:'550', color:"var(--light-grey)"}}>Nice, France</p>
       </Link>
 
 
